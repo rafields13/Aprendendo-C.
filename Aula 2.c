@@ -2,7 +2,7 @@
 
 #include <locale.h>
 
-#include<math.h>
+#include <math.h>
 
 void main(){
 
