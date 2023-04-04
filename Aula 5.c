@@ -141,5 +141,26 @@ void main() {
        printf("%d x %d = %d \n", 9, i, 9*i);
 
    }
+    
+// 7. Fibonacci.
+
+   int entrada = 0;
+   int primeiro = 0;
+   int segundo = 1;
+   int auxiliador = 0;
+   int i = 0;
+
+   printf("Escreva quantos números da sequência de Fibonacci você quer, por favor: ");
+   scanf("%d", &entrada);
+
+   printf("Fibonacci: %d,", primeiro);
+
+   for(i; i < (entrada -1); i ++) {
+       printf(" %d,", segundo);
+       auxiliador = primeiro;
+       primeiro = segundo;
+       segundo = auxiliador + primeiro;
+
+   }
 
 }
