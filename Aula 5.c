@@ -71,50 +71,20 @@ void main() {
 
 // 5. Escreva um algoritmo que solicita ao usuário N números inteiros, calcule e imprima na tela do computador a média(duas casas decimais) do aluno. (Usando FOR).
 
-    int i0 = 0;
-    float x0 = 0;
-    float m0 = 0;
+    int i = 0;
+    float x = 0;
+    float m = 0;
 
-    for (i0; i0 < 3; i0 ++) {
+    for (i = 0; i < 3; i ++) {
 
         printf("Digite um valor qualquer, por favor: ");
-        scanf("%f", &x0);
-        m0 += x0;
+        scanf("%f", &x);
+        m += x;
 
     }
 
-    m0 = m0 / 3;
-    printf("A média é: %.2f \n", m0);
-
-    int i1 = 0;
-    float x1 = 0;
-    float m1 = 0;
-
-    for (i1; i1 < 2; i1 ++) {
-
-        printf("Digite um valor qualquer, por favor: ");
-        scanf("%f", &x1);
-        m1 += x1;
-
-    }
-
-    m1 = m1 / 2;
-    printf("A média é: %.2f \n", m1);
-
-    int i2 = 0;
-    float x2 = 0;
-    float m2 = 0;
-
-    for (i2; i2 < 5; i2 ++) {
-
-        printf("Digite um valor qualquer, por favor: ");
-        scanf("%f", &x2);
-        m2 += x2;
-
-    }
-
-    m2 = m2 / 5;
-    printf("A média é: %.2f", m2);
+    m = m / 3;
+    printf("A média é: %.2f \n", m);
 
 // 6. Crie a tabela de multiplicação do 9 que mostra essa saída:
 
