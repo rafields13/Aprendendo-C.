@@ -1,0 +1,42 @@
+// Crie um programa que gere uma senha aleatória com 8 caracteres.
+
+    #include <stdio.h>
+    #include <stdlib.h>
+    #include <time.h>
+    #include <locale.h>
+
+        void main() {
+
+            setlocale(LC_ALL, "Portuguese");
+
+            int i, codigo;
+            char senha[8];
+
+            srand(time(NULL));
+
+            for (i= 0; i < 8; i++) {
+
+                codigo = rand() % 3;
+
+                switch(codigo) {
+
+                case 0:
+                    senha[i] = rand() % 26 + 'A';
+                    break;
+
+                case 1:
+                    senha[i] = rand() % 26 + 'a';
+                    break;
+
+                case 2:
+                    senha[i] = rand() % 10 + '0';
+                    break;
+
+                }
+
+            }
+
+            senha[i] = '\0';
+            printf("A sua senha é %s \n", senha);
+
+        }
